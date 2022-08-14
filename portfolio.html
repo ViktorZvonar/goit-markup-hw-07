@@ -20,28 +20,34 @@
 
   <body>
     <header class="header">
-      <div class="container flex-for-header">
-        <a class="logo" href="./index.html" lang="en">Web<span class="logo-accent">Studio</span></a>
-        <nav class="nav">
-          <ul class="link-list">
-            <li class="link-name"><a class="link-item" href="./index.html">Студія</a></li>
-            <li class="link-name">
-              <a class="link-item current" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="link-name"><a class="link-item" href="./">Контакт</a></li>
-          </ul>
-        </nav>
+      <div class="container container--flex">
+        <a class="logo" href="./index.html" lang="en"
+          >Web<span class="logo__accent">Studio</span></a
+        >
+
+        <ul class="link-list">
+          <li class="link-list__name">
+            <a class="link-list__item" href="./index.html">Студія</a>
+          </li>
+          <li class="link-list__name">
+            <a class="link-list__item link-list__item--current" href="./portfolio.html"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="link-list__name"><a class="link-list__item" href="./">Контакт</a></li>
+        </ul>
+
         <ul class="contact-list">
-          <li class="contact-name">
-            <a class="contact-item" href="mailto:info@devstudio.com"
-              ><svg class="contact-icon" width="16" height="12">
+          <li class="contact-list__name">
+            <a class="contact-list__item" href="mailto:info@devstudio.com"
+              ><svg class="contact-list__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="contact-name">
-            <a class="contact-item" href="tel:+380961111111"
-              ><svg class="contact-icon" width="16" height="12">
+          <li class="contact-list__name">
+            <a class="contact-list__item" href="tel:+380961111111"
+              ><svg class="contact-list__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -53,27 +59,31 @@
     <main>
       <section class="examples">
         <div class="container">
-          <h1 class="visually-hidden">Фільтр</h1>
+          <h1 class="hidden">Фільтр</h1>
 
           <ul class="filter-list">
-            <li class="filter-item"><button type="button" class="filter-button">Все</button></li>
-
             <li class="filter-item">
-              <button type="button" class="filter-button">Веб-сайти</button>
+              <button type="button" class="button filter__btn">Все</button>
             </li>
 
             <li class="filter-item">
-              <button type="button" class="filter-button">Додатки</button>
+              <button type="button" class="button filter__btn">Веб-сайти</button>
             </li>
 
-            <li class="filter-item"><button type="button" class="filter-button">Дизайн</button></li>
+            <li class="filter-item">
+              <button type="button" class="button filter__btn">Додатки</button>
+            </li>
 
             <li class="filter-item">
-              <button type="button" class="filter-button">Маркетинг</button>
+              <button type="button" class="button filter__btn">Дизайн</button>
+            </li>
+
+            <li class="filter-item">
+              <button type="button" class="button filter__btn">Маркетинг</button>
             </li>
           </ul>
 
-          <h2 class="examples visually-hidden">Приклади</h2>
+          <h2 class="examples hidden">Приклади</h2>
 
           <ul class="examples-list">
             <li class="example-demo">
@@ -238,69 +248,67 @@
     </main>
 
     <footer class="footer">
-      <div class="container flex-for-footer">
-        <div class="footer-with-address">
-          <a class="logo footer-logo" href="./index.html" lang="en"
-            >Web<span class="footer-logo-accent">Studio</span>
+      <div class="container container--flex footer--flex">
+        <div class="footer-address">
+          <a class="logo" href="./index.html" lang="en"
+            >Web<span class="logo__accent--inverse">Studio</span>
           </a>
-          <address class="footer-address">
-            <p class="footer-address-text physical">м. Київ, пр-т Лесі Українки, 26</p>
-            <ul class="footer-address-list">
-              <li class="footer-address-item">
-                <a class="footer-address-text mail" href="mailto:info@devstudio.com"
-                  >info@example.com</a
-                >
+          <address class="address">
+            <p class="address__text address__text--physical">м. Київ, пр-т Лесі Українки, 26</p>
+            <ul class="address__list">
+              <li class="address__item">
+                <a class="address__text" href="mailto:info@devstudio.com">info@example.com</a>
               </li>
-              <li class="footer-address-item">
-                <a class="footer-address-text phone" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="address__item">
+                <a class="address__text" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-with-caller">
-          <h3 class="footer-caller">Приєднуйтесь</h3>
-          <ul class="footer-caller-list">
-            <li class="footer-caller-item">
-              <a href="" class="footer-caller-link"
-                ><svg class="footer-caller-icon" width="20" height="20">
+        <div class="caller">
+          <h3 class="caller__title">Приєднуйтесь</h3>
+          <ul class="caller__list">
+            <li class="caller__item">
+              <a href="" class="caller__link"
+                ><svg class="caller__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use></svg
               ></a>
             </li>
-            <li class="footer-caller-item">
-              <a href="" class="footer-caller-link"
-                ><svg class="footer-caller-icon" width="20" height="20">
+            <li class="caller__item">
+              <a href="" class="caller__link"
+                ><svg class="caller__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use></svg
               ></a>
             </li>
-            <li class="footer-caller-item">
-              <a href="" class="footer-caller-link"
-                ><svg class="footer-caller-icon" width="20" height="20">
+            <li class="caller__item">
+              <a href="" class="caller__link"
+                ><svg class="caller__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use></svg
               ></a>
             </li>
-            <li class="footer-caller-item">
-              <a href="" class="footer-caller-link"
-                ><svg class="footer-caller-icon" width="20" height="20">
+            <li class="caller__item">
+              <a href="" class="caller__link"
+                ><svg class="caller__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use></svg
               ></a>
             </li>
           </ul>
         </div>
 
-        <div class="footer-with-subscription">
-          <h3 class="footer-caller">Підпишіться на розсилку</h3>
-          <form class="user-email-form">
-            <div class="user-email-div">
+        <div class="subscription">
+          <h3 class="subscription__title">Підпишіться на розсилку</h3>
+          <form class="subscription__form">
+            <div class="subscription__wrap">
               <input
-                class="subcription-email"
+                class="subcription__email"
                 type="email"
                 name="email"
                 id="user_email"
                 placeholder="E-mail"
               />
-              <button type="submit" class="subscription-btn">
+              <button type="submit" class="button subscription__btn">
                 Підписатися
-                <svg class="send-icon" width="24" height="24">
+                <svg class="subscription__icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-icon-send-airplane"></use>
                 </svg>
               </button>
