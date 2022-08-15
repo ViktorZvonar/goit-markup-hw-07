@@ -99,6 +99,13 @@ textarea {
   border-radius: 4px;
 }
 
+/* Загальна секція */
+
+.section {
+  padding: 94px 0;
+  margin: 0 auto;
+}
+
 /* Header спільний для обох сторінок */
 
 .header {
@@ -218,7 +225,6 @@ textarea {
 
 .hero {
   padding: 200px 0;
-  margin: auto;
   width: 1600px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/bg-hero/bg-hero-img.jpg);
@@ -250,8 +256,7 @@ textarea {
 }
 
 .benefit {
-  padding-top: 94px;
-  margin: 0 auto;
+  padding-bottom: 0;
 }
 
 .benefit__list {
@@ -283,9 +288,6 @@ textarea {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
-.activities {
-  padding: 94px 0;
 }
 
 .activities__title {
@@ -330,8 +332,6 @@ textarea {
 }
 
 .teem {
-  padding: 94px 0;
-
   background-color: var(--tertiary-background-color);
 }
 .teem__title,
@@ -414,10 +414,6 @@ textarea {
 .network__icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients {
-  padding: 94px 0;
 }
 
 .clients__list {
@@ -669,7 +665,7 @@ textarea {
 
 /* Строрінка Портфоліо */
 
-.filter-list {
+.filter__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -696,16 +692,12 @@ textarea {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.examples {
-  padding: 94px 0;
-}
-
-.thumb-example {
+.examples__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.about-example {
+.examples__description {
   position: absolute;
   top: 0;
   left: 0;
@@ -726,43 +718,43 @@ textarea {
   opacity: 0;
 }
 
-.example-demo-link:hover .about-example,
-.example-demo-link:focus .about-example {
+.examples__link:hover .examples__description,
+.examples__link:focus .examples__description {
   transform: translateY(0);
   opacity: 1;
 }
 
-.example-div {
+.examples__wrap {
   padding: 20px 24px;
   border-bottom: var(--secondary-border-features);
   border-left: var(--secondary-border-features);
   border-right: var(--secondary-border-features);
 }
 
-.examples-list {
+.examples__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.example-demo {
+.examples__demo {
   background: var(--primary-background-color);
 
   flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
-.example-demo-link:hover,
-.example-demo-link:focus {
+.examples__link:hover,
+.examples__link:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.example-demo-link {
+.examples__link {
   display: block;
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.example-title {
+.examples__name {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -771,7 +763,7 @@ textarea {
   color: var(--primary-text-color);
 }
 
-.example-text {
+.examples__text {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
