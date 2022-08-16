@@ -3,9 +3,8 @@
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-.container--flex {
-  display: flex;
-  align-items: center;
+  &--flex {
+    display: flex;
+    align-items: center;
+  }
 }

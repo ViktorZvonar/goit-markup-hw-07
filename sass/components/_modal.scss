@@ -39,11 +39,10 @@
   fill: var(--accent-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
-}
-
-.close__btn:focus .close__icon,
-.close__btn:hover .close__icon {
-  fill: var(--active-link-color);
+  .close__btn:focus &,
+  .close__btn:hover & {
+    fill: var(--active-link-color);
+  }
 }
 
 .modal__title {

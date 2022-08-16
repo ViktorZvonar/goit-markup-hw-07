@@ -48,37 +48,3 @@
 .teem__wrap {
   padding: 30px 0;
 }
-
-.network__list {
-  display: flex;
-  justify-content: center;
-
-  gap: 10px;
-}
-
-.network__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.network__link:hover,
-.network__link:focus {
-  background-color: var(--active-link-color);
-}
-
-.network__link:hover .network__icon,
-.network__link:focus .network__icon {
-  fill: var(--tertiary-text-color);
-}
-
-.network__icon {
-  fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
