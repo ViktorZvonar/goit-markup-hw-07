@@ -12,7 +12,7 @@
   height: 100%;
   padding: 63px 24px;
 
-  font-size: 18px;
+  font-size: var(--examples-fz);
   line-height: calc(28 / 18);
   letter-spacing: 0.03em;
 
@@ -69,7 +69,7 @@
 }
 
 .examples__text {
-  font-size: 16px;
+  font-size: var(--auxiliary-fz);
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);

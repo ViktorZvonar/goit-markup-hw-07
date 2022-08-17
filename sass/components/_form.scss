@@ -18,7 +18,7 @@
 
 .form__label {
   margin-bottom: 4px;
-  font-size: 12px;
+  font-size: var(--form-fz);
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
 

@@ -18,7 +18,7 @@
 
 .link-list__item {
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--main-fz);
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -73,7 +73,7 @@
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--main-fz);
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);

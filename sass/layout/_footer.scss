@@ -27,7 +27,7 @@
 
   &__text {
     font-style: normal;
-    font-size: 14px;
+    font-size: var(--main-fz);
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--footer-address-text-color);
@@ -42,7 +42,7 @@
 .caller__title,
 .subscription__title {
   font-weight: 700;
-  font-size: 14px;
+  font-size: var(--main-fz);
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -98,7 +98,7 @@
   color: var(--tertiary-text-color);
 
   &::placeholder {
-    font-size: 16px;
+    font-size: var(--auxiliary-fz);
     line-height: calc(20 / 16);
     letter-spacing: 0.03em;
 

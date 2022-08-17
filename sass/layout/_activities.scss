@@ -1,6 +1,6 @@
 .activities__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: var(--title-fz);
   line-height: calc(42.19 / 36);
   text-align: center;
   letter-spacing: 0.03em;
@@ -28,7 +28,7 @@
   justify-content: center;
 
   font-weight: 700;
-  font-size: 14px;
+  font-size: var(--main-fz);
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
