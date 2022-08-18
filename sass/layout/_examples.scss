@@ -60,8 +60,8 @@
 }
 
 .examples__name {
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: var(--fw-bold);
+  font-size: var(--examples-fz);
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   height: 36px;

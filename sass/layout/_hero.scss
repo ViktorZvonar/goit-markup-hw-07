@@ -15,7 +15,7 @@
   &__title {
     margin: 0 auto 30px;
 
-    font-weight: 900;
+    font-weight: var(--fw-hero);
     font-size: var(--hero-fz);
     line-height: calc(60 / 44);
     text-align: center;

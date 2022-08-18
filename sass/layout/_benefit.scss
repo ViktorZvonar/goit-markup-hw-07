@@ -16,7 +16,7 @@
   }
 
   &__title {
-    font-weight: 700;
+    font-weight: var(--fw-bold);
     font-size: var(--main-fz);
     line-height: 1.17;
     letter-spacing: 0.03em;

@@ -46,7 +46,7 @@
 }
 
 .modal__title {
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   font-size: var(--modal-fz);
   line-height: calc(23 / 20);
   text-align: center;
