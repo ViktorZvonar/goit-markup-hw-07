@@ -12,6 +12,17 @@
   --tertiary-background-color: #f5f4fa;
   --primary-border-features: 1px solid #ececec;
   --secondary-border-features: 1px solid #eeeeee;
+  --main-fz: 14px;
+  --auxiliary-fz: 16px;
+  --examples-fz: 18px;
+  --title-fz: 36px;
+  --hero-fz: 44px;
+  --form-fz: 12px;
+  --logo-fz: 26px;
+  --modal-fz: 20px;
+  --fw-bold: 700;
+  --fw-medium: 500;
+  --fw-hero: 900;
 }
 
 body {
@@ -76,8 +87,8 @@ textarea {
   align-items: center;
   margin: 0 auto;
   font-family: inherit;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: var(--auxiliary-fz);
+  font-weight: var(--fw-bold);
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
@@ -112,8 +123,8 @@ textarea {
 }
 
 .link-list__item {
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: var(--fw-medium);
+  font-size: var(--main-fz);
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -159,8 +170,8 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: var(--fw-medium);
+  font-size: var(--main-fz);
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
@@ -177,8 +188,8 @@ textarea {
 
 .logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
+  font-weight: var(--fw-bold);
+  font-size: var(--logo-fz);
   line-height: 1.3830769231;
   letter-spacing: 0.03em;
   color: var(--logo-text-color);
@@ -203,8 +214,8 @@ textarea {
 }
 .hero__title {
   margin: 0 auto 30px;
-  font-weight: 900;
-  font-size: 44px;
+  font-weight: var(--fw-hero);
+  font-size: var(--hero-fz);
   line-height: 1.3636363636;
   text-align: center;
   letter-spacing: 0.06em;
@@ -235,8 +246,8 @@ textarea {
   background-color: var(--tertiary-background-color);
 }
 .benefit__title {
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: var(--fw-bold);
+  font-size: var(--main-fz);
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -245,15 +256,15 @@ textarea {
   margin-bottom: 10px;
 }
 .benefit__text {
-  font-size: 14px;
+  font-size: var(--main-fz);
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
 .activities__title {
-  font-weight: 700;
-  font-size: 36px;
+  font-weight: var(--fw-bold);
+  font-size: var(--title-fz);
   line-height: 1.1719444444;
   text-align: center;
   letter-spacing: 0.03em;
@@ -277,8 +288,8 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: var(--fw-bold);
+  font-size: var(--main-fz);
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -295,8 +306,8 @@ textarea {
 .teem__title,
 .clients__title {
   margin: 0 auto 50px;
-  font-weight: 700;
-  font-size: 36px;
+  font-weight: var(--fw-bold);
+  font-size: var(--title-fz);
   line-height: 1.1719444444;
   text-align: center;
   letter-spacing: 0.03em;
@@ -317,8 +328,8 @@ textarea {
 
 .teem__member {
   margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: var(--fw-medium);
+  font-size: var(--auxiliary-fz);
   line-height: 1.171875;
   text-align: center;
   letter-spacing: 0.03em;
@@ -326,7 +337,7 @@ textarea {
 }
 
 .teem__position {
-  font-size: 16px;
+  font-size: var(--auxiliary-fz);
   line-height: 1.171875;
   text-align: center;
   letter-spacing: 0.03em;
@@ -453,8 +464,8 @@ textarea {
 }
 
 .modal__title {
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: var(--fw-bold);
+  font-size: var(--modal-fz);
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
@@ -480,7 +491,7 @@ textarea {
 
 .form__label {
   margin-bottom: 4px;
-  font-size: 12px;
+  font-size: var(--form-fz);
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
@@ -512,7 +523,7 @@ textarea {
   border-color: var(--active-link-color);
 }
 .form__comment::placeholder {
-  font-size: 12px;
+  font-size: var(--form-fz);
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
@@ -528,7 +539,7 @@ textarea {
 .check__label {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: var(--main-fz);
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -577,7 +588,7 @@ textarea {
 }
 .filter__btn {
   padding: 6px 22px;
-  font-weight: 500;
+  font-weight: var(--fw-medium);
   line-height: 1.625;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -602,7 +613,7 @@ textarea {
   width: 100%;
   height: 100%;
   padding: 63px 24px;
-  font-size: 18px;
+  font-size: var(--examples-fz);
   line-height: 1.5555555556;
   letter-spacing: 0.03em;
   color: var(--tertiary-text-color);
@@ -644,8 +655,8 @@ textarea {
 }
 
 .examples__name {
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: var(--fw-bold);
+  font-size: var(--examples-fz);
   line-height: 2;
   letter-spacing: 0.06em;
   height: 36px;
@@ -653,7 +664,7 @@ textarea {
 }
 
 .examples__text {
-  font-size: 16px;
+  font-size: var(--auxiliary-fz);
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -687,7 +698,7 @@ textarea {
 }
 .address__text {
   font-style: normal;
-  font-size: 14px;
+  font-size: var(--main-fz);
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: var(--footer-address-text-color);
@@ -699,8 +710,8 @@ textarea {
 
 .caller__title,
 .subscription__title {
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: var(--fw-bold);
+  font-size: var(--main-fz);
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -750,7 +761,7 @@ textarea {
   color: var(--tertiary-text-color);
 }
 .subcription__email::placeholder {
-  font-size: 16px;
+  font-size: var(--auxiliary-fz);
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
